@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strength Standards</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="header">
+        <h1>Strength Standards Calculator</h1>
+    </section>
+    <section class="input-box">
+        <div class="weight-input">
+            <h3 class="inline">Bodyweight: </h3>
+            <form class="inline" id="weightForm" action="/submit" method="post">
+                <input class="inline" type="number" id="weight" name="weight" min="1" max="1000">
+                <input type="submit" value="Enter">
+            </form>
+        </div>
+    </section>
+    <section class="overview">
+        <h1>Bodyweight Ratios</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>Beginner</th>
+                <th>Novice</th>
+                <th>Intermediate</th>
+                <th>Advanced</th>
+                <th>Elite</th>
+            </tr>
+            <tr>
+                <th>Bench</th>
+                <th>0.5</th>
+                <th>0.75</th>
+                <th>1.25</th>
+                <th>1.75</th>
+                <th>2.0</th>
+            </tr>
+            <tr>
+                <th>Squat</th>
+                <th>0.75</th>
+                <th>1.25</th>
+                <th>1.5</th>
+                <th>2.25</th>
+                <th>2.75</th>
+            </tr>
+            <tr>
+                <th>Deadlift</th>
+                <th>1.0</th>
+                <th>1.5</th>
+                <th>2.0</th>
+                <th>2.5</th>
+                <th>3.0</th>
+            </tr>
+            <tr>
+                <th>Pull-ups</th>
+                <th>0.75</th>
+                <th>0.75</th>
+                <th>1.25</th>
+                <th>1.75</th>
+                <th>2.0</th>
+            </tr>
+            <tr>
+                <th>Dips</th>
+                <th>0</th>
+                <th>0.75</th>
+                <th>1.25</th>
+                <th>1.75</th>
+                <th>2.0</th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
